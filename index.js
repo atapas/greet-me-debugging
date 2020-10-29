@@ -8,6 +8,11 @@ const print = function() {
                         + ', Your wish `' 
                         + + wish 
                         + '` may come true!';
-    
+    logger(message);
     document.getElementById('output').innerHTML = '<span class="message">' + message + '</span>';
+}
+
+const logger = function(text) {
+    console.log('**** I am a logger function ****');
+    console.log(text);
 }
